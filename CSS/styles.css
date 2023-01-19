@@ -8,6 +8,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 body{
@@ -15,15 +16,14 @@ body{
     width: 100%;
     overflow: hidden;
     min-height: 100vh;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: var(--fontSize);
 }
 
 .header-init{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 15px 30px;   
+    margin: 15px 30px; 
+    font-size: var(--fontSize);  
 }
 
 nav{
@@ -54,6 +54,49 @@ a {
 
 .border{
     border: 2px solid var(--mediumGray);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 7px 20px;
+}
+
+section{
+    margin: 50px 0 100px;
+    padding: 20px 0 20px;
+}
+.section-init{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 35px;
+    margin: 0px 34px;
+}
+
+.info{
+    place-self: center;
+    padding: 0 150px;
+}
+
+.info h1{
+    font-size: 6rem; 
+    color: var(--almostBlack);
+    line-height: 90px
+}
+
+.info p {
+    font-size: 25px; 
+    color: var(--mediumGray);
+    margin: 0 0 60px;
+}
+
+.info a {
+    border-color: var(--almostWhite);
+    border-radius: 15px;
+    padding: 15px 25px;
+    background-color: var(--almostBlack);
+    color: var(--almostWhite);
+    font-size: var(--fontSize); 
+}
+
+.section-init img{
+    width: 40rem;
+    height: 45rem;
 }
