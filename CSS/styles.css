@@ -65,9 +65,8 @@ section{
 .section-init{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
     gap: 35px;
-    margin: 0px 34px;
+    margin: 0px -4rem;
 }
 
 .info{
@@ -76,24 +75,32 @@ section{
 }
 
 .info h1{
-    font-size: 6rem; 
+    font-size: 5rem; 
     color: var(--almostBlack);
-    line-height: 90px
+    line-height: 90px;
+    width: 32rem;
 }
 
 .info p {
-    font-size: 25px; 
+    font-size: 20px; 
     color: var(--mediumGray);
-    margin: 0 0 60px;
+    width: 30rem;
+    margin-bottom: 80px;
 }
 
-.info a {
+.info-button {
     border-color: var(--almostWhite);
     border-radius: 15px;
     padding: 15px 25px;
     background-color: var(--almostBlack);
     color: var(--almostWhite);
     font-size: var(--fontSize); 
+}
+
+.info-brands{
+    margin-top: 7rem;
+    display: flex;
+    gap: 30px;
 }
 
 .section-init img{
