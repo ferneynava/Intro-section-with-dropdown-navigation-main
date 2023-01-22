@@ -118,6 +118,8 @@ section{
     box-shadow:  0 -3em 3em rgba(0,0,0,0.1),
                 0 0  0 2px rgb(255,255,255),
                 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
 }
 .Ready-features {
     font-size: 12px; 
@@ -125,10 +127,8 @@ section{
 .Ready-features ul{
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 0 0 30px;
+    align-items: center; 
 }
 
 .Ready-features ul li{
