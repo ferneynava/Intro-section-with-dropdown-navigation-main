@@ -18,6 +18,10 @@ body{
     min-height: 100vh;
 }
 
+.inactive {
+    display: none;
+}
+
 .header-init{
     display: flex;
     flex-direction: row;
@@ -45,6 +49,15 @@ nav{
 
 .navbar-left ul li svg{
     margin-left: 5px;
+}
+
+span{
+    text-decoration: none;
+    color: var( --mediumGray);
+}
+
+span:hover{
+    cursor: pointer;
 }
 
 a {
@@ -119,11 +132,13 @@ section{
                 0 0  0 2px rgb(255,255,255),
                 0.3em 0.3em 1em rgba(0,0,0,0.3);
     display: flex;
-    align-items: center;
+    align-items: center;   
 }
+
 .Ready-features {
     font-size: 12px; 
 }
+
 .Ready-features ul{
     list-style: none;
     padding: 0;
@@ -137,3 +152,27 @@ section{
     gap: 12px
 }
 
+.Container-company {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10px;
+    box-shadow:  0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(255,255,255),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+    top: 70px;
+    left: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.Ready-company{
+    font-size: 12px; 
+}
+
+.Ready-company ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 30px;
+    align-items: center; 
+}
