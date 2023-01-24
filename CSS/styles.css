@@ -37,14 +37,21 @@ nav{
 }
 
 .navbar-left{
-    margin-left: 70px;
+    margin-left: 21px;
+    display: flex;
+    align-items: center;
+    gap: 69px;
 }
 
-.navbar-left ul, .navbar-right ul {
+.navbar-right-mobile{ 
+    display: none;
+}
+
+.navbar-left ul, .navbar-right-desktop ul {
     list-style: none;
     display: flex;
     padding: 0;
-    gap: 4rem;
+    gap: 2rem;
 } 
 
 .navbar-left ul li svg{
@@ -175,4 +182,18 @@ section{
     padding: 0;
     margin: 0 0 0 30px;
     align-items: center; 
+}
+
+@media (max-width: 640px){
+    .navbar-left ul{
+        display: none;
+    }
+
+    .navbar-right-desktop ul{
+        display: none;
+    }
+
+    .navbar-right-mobile{
+        display: block;
+    }
 }
