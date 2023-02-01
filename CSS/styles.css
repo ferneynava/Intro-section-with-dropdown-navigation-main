@@ -185,8 +185,16 @@ section{
 }
 
 @media (max-width: 640px){
+    .header-init{
+        margin: 97px 105px;
+    }
+
     .navbar-left ul{
         display: none;
+    }
+
+    .navbar-left svg{
+        transform: scale(3);
     }
 
     .navbar-right-desktop ul{
@@ -195,5 +203,17 @@ section{
 
     .navbar-right-mobile{
         display: block;
+    }
+
+    .navbar-right-mobile svg{
+        transform: scale(3);
+    }
+
+    .section-init{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info{
+        grid-row-start: 2;
     }
 }
