@@ -189,12 +189,20 @@ section{
         margin: 97px 105px;
     }
 
+    nav{
+        gap: 27rem;
+    }
+
+    .navbar-left{
+        margin-left: 15px;
+    }
+
     .navbar-left ul{
         display: none;
     }
 
     .navbar-left svg{
-        transform: scale(3);
+        transform: scale(2.5);
     }
 
     .navbar-right-desktop ul{
@@ -206,14 +214,28 @@ section{
     }
 
     .navbar-right-mobile svg{
-        transform: scale(3);
+        transform: scale(2.5);
     }
 
     .section-init{
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .section-init img{
+        width: 45rem;
+        height: 40rem;
+        margin-left: 37px;
+    }
+
     .info{
         grid-row-start: 2;
+    }
+
+    .info h1{
+        font-size: 3.8rem;
+    }
+
+    img{
+        justify-self: center;
     }
 }

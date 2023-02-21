@@ -25,3 +25,4 @@ function toggleCompany(){
         Asidecompany.classList.add("inactive")
     }
 }
+
