@@ -123,9 +123,13 @@ section{
     gap: 30px;
 }
 
-.section-init img{
+.section-init .heroDesktop{
     width: 40rem;
     height: 45rem;
+}
+
+.section-init .heroMobile{
+    display: none;
 }
 
 .Container-features {
@@ -220,19 +224,40 @@ section{
     .section-init{
         grid-template-columns: repeat(1, 1fr);
     }
+ 
+    .section-init .heroDesktop{
+        display: none;
+    }
 
-    .section-init img{
-        width: 45rem;
-        height: 40rem;
-        margin-left: 37px;
+    .section-init .heroMobile{
+        display: block;
+        width: 48.3rem;
+        height: 39rem;
+        margin: 0 67px;
     }
 
     .info{
         grid-row-start: 2;
+        text-align: center;
+        padding: 0px;
     }
 
     .info h1{
-        font-size: 3.8rem;
+        font-size: 4.1rem;
+        text-align: center;
+        width: auto;
+    }
+
+    .info p {
+        font-size: 1.8rem; 
+        text-align: center;
+        width: 568px;
+        margin: 0 auto 69px;
+    }
+
+    .info-button{
+        font-size: 30px;
+        padding: 25px 30px;
     }
 
     img{
