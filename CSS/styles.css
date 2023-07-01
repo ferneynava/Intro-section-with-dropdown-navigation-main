@@ -12,10 +12,49 @@
 }
 
 body{
+    position: relative;
     margin: 0;
     width: 100%;
     overflow: hidden;
     min-height: 100vh;
+}
+
+.containerMenuMobile{
+    position: absolute;
+    background-color: hsla(0, 0%, 8%, 0.402);
+    top: 0;
+    height: 100%;
+    width: 100vh;
+    display: flex;
+    justify-content: end;
+}
+
+.Menu {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 30rem;
+}
+
+.Menu ul {
+    position: absolute;
+    list-style: none;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    font-size: 25px;  
+    color: var( --mediumGray);
+}
+
+.Menu ul li img {
+    margin-left: 20px;
+    height: 11px;
+    width: 16px;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .inactive {
@@ -26,8 +65,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 15px 30px; 
+    margin: 0 30px; 
     font-size: var(--fontSize);  
+    padding: 12px;
 }
 
 nav{
@@ -54,7 +94,7 @@ nav{
     gap: 2rem;
 } 
 
-.navbar-left ul li svg{
+.navbar-left ul li img{
     margin-left: 5px;
 }
 
@@ -70,6 +110,8 @@ span:hover{
 a {
     text-decoration: none;
     color: var( --mediumGray);
+    display: flex;
+    align-items: center;
 }
 
 .border{
@@ -79,7 +121,7 @@ a {
 }
 
 section{
-    margin: 50px 0 100px;
+    margin: 28px 0 100px;
     padding: 20px 0 20px;
 }
 .section-init{
@@ -190,15 +232,16 @@ section{
 
 @media (max-width: 640px){
     .header-init{
-        margin: 97px 105px;
+        margin: 0 105px;
     }
 
     nav{
-        gap: 27rem;
+        gap: 34rem;
+        margin-top: 49px;
     }
 
     .navbar-left{
-        margin-left: 15px;
+        margin-left: 1px;
     }
 
     .navbar-left ul{
