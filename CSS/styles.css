@@ -50,8 +50,9 @@ nav{
     text-decoration: none;
 }
 
-.navbar-right-mobile{ 
-    display: none;
+.navbar-right-mobile img {
+    position: absolute;
+    width: 4rem;
 }
 
 .navbar-left ul, .navbar-right-desktop ul {
@@ -63,6 +64,11 @@ nav{
 
 .navbar-left ul li img{
     margin-left: 5px;
+    width: 13px;
+}
+
+.navbar-right-mobile{
+    display: none;
 }
 
 span{
@@ -231,6 +237,11 @@ section{
     text-decoration: none;
 }
 
+.menuUl li img{
+    margin-left: 5px;
+    width: 24px;
+}
+
 .containerMenuMobile{
     position: absolute;
     background-color: hsla(0, 0%, 8%, 0.402);
@@ -333,14 +344,10 @@ section{
         display: block;
     }
 
-    .navbar-right-mobile svg{
-        transform: scale(2.5);
-    }
-
     .section-init{
         grid-template-columns: repeat(1, 1fr);
     }
- 
+
     .section-init .heroDesktop{
         display: none;
     }
@@ -349,7 +356,7 @@ section{
         display: block;
         width: 48.3rem;
         height: 39rem;
-        margin: 0 67px;
+        margin: 0 99px;
     }
 
     .info{
@@ -375,6 +382,4 @@ section{
         font-size: 30px;
         padding: 25px 30px;
     }
-
-    img{
-        jus
+}
